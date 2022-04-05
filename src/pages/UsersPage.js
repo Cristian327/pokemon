@@ -8,6 +8,7 @@ import axios from "axios";
 // import div from "./components/div";
 // import { motion } from "framer-motion";
 import "./UsersPage.css";
+import PaginatedItems from "../components/Paginate";
 
 const list = {
   visible: {
@@ -496,6 +497,7 @@ class UserPage extends React.Component {
                 )}
               </div>
             </div>
+            <PaginatedItems />
             {this.state.noDataFound && (
               <div className="no__data noselect">
                 No such Pokémon in this region :/

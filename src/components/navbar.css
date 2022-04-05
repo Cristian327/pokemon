@@ -1,7 +1,7 @@
 .fixed-nav-bar {
   position: fixed;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   display: flex;
   top: 0;
   left: 0;
@@ -13,22 +13,19 @@
   display: flex;
   line-height: 50px;
 }
-
+.left-logo {
+  display: flex;
+  position: relative;
+}
 nav img {
   height: 50px;
-}
-
-nav .brand {
-  flex: 1;
-  align-self: flex-start;
-  height: 50px;
-  margin-left: 10px;
 }
 
 nav .link {
   flex: 1;
   max-width: max-content;
   margin-right: 40px;
+  color: #222;
 }
 .fixed-nav-bar ul {
   display: flex;
@@ -36,5 +33,36 @@ nav .link {
 
 a:hover {
   color: black;
+}
+nav ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* Button */
+.myButton {
+  background-color: transparent;
+  border-radius: 107px;
+  border: 1px solid #6f87d1;
+  display: initial;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 12px 60px;
+  text-shadow: 0px 1px 0px #283966;
+}
+.myButton:hover {
+  background-color: transparent;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 

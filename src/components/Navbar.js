@@ -1,45 +1,53 @@
 import { NavLink } from "react-router-dom";
+import NavbarImg from "../assets/logo_full_color.svg";
 import "./navbar.css";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav class="fixed-nav-bar">
-        <ul>
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              <a class="brand">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Poundexclam.svg/2000px-Poundexclam.svg.png" />
-                Home
-              </a>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/users"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              <a class="link" href="#">
-                Users
-              </a>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
-              to="/about"
-            >
-              <a class="link" href="#">
-                Personas
-              </a>
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="fixed-nav-bar">
+      <div>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <a class="left-logo">
+            <img src={NavbarImg} sizes="(min-width: 750px) 1440px, 100vw" />
+          </a>
+        </NavLink>
+      </div>
+      <ul>
+        <li>
+          <NavLink
+            to="/users"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <a class="link" href="#">
+              Inicio
+            </a>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/about"
+          >
+            <a class="link" href="#">
+              Beneficios
+            </a>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/about"
+          >
+            <a class="link myButton" href="#">
+              Login
+            </a>
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
