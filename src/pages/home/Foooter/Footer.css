@@ -1,0 +1,83 @@
+.image-banner-untamable {
+  position: relative;
+}
+.image-banner-size-mid-banner {
+  max-width: 100%;
+}
+.image-banner-size-mid-banner-mobile {
+  display: none;
+}
+.image-banner-untamable h2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  color: var(--clr-primary-1);
+  font: lighter 45px/45px Helvetica, Sans-Serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+}
+.info-grid-untamable {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 110px;
+  width: 100%;
+  color: var(--clr-primary-1);
+  font: bold 45px/45px Helvetica, Sans-Serif;
+}
+
+.info-grid-untamable h3 {
+  font-weight: 100;
+}
+.info-grid-untamable p {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: lighter;
+  max-width: 58%;
+  line-height: 1.6;
+}
+
+/* Button */
+
+.button_getknow-banner {
+  background-color: rgb(97, 97, 201);
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--clr-primary-2);
+  font-size: 17px;
+  padding: 12px 40px;
+  text-decoration: none;
+  position: absolute;
+  top: 38%;
+  left: 45%;
+  z-index: 5;
+  text-transform: inherit;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.button_getknow-banner:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: var(--clr-button-hover);
+}
+.button_getknow-banner:active {
+  border: 1px solid #111;
+}
+
+@media screen and (max-width: 768px) {
+  .image-banner-size-mid-banner-mobile {
+    display: block;
+    width: 100%;
+  }
+  .image-banner-size-mid-banner {
+    display: none;
+  }
+  .info-grid-untamable p {
+    font-size: 0.987rem;
+    max-width: 93%;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,99 @@
+/* Offers Content */
+.offers-content-second {
+  background-image: url("../../../assets/Backgrounds/Bg_Header.png") no-repeat
+    center cover;
+}
+.offers-content-side {
+  max-width: 82%;
+  color: var(--clr-primary-1);
+}
+.offers-content-side h2 {
+  max-width: 100%;
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--clr-primary-1);
+}
+.offers-content-side p {
+  max-width: 100%;
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.remote-sale {
+  background-color: transparent;
+  border: 1px solid #2d95cd;
+  display: inline-block;
+  cursor: pointer;
+  color: #2d95cd;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 70px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+/* Image */
+.image-text {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+.over-text {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 100%;
+}
+.over-text span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+.over-text span.spacer {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .offers-content-bronco {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  .offers-content-second {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .offers-content-bronco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .offers-content-second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 991px) {
+  .offers-content-img {
+    max-width: 100%;
+  }
+}

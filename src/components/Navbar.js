@@ -4,13 +4,13 @@ import "./navbar.css";
 
 export default function Navbar() {
   return (
-    <nav class="fixed-nav-bar">
+    <nav className="fixed-nav-bar">
       <div>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          <a class="left-logo">
+          <a className="left-logo">
             <img src={NavbarImg} sizes="(min-width: 750px) 1440px, 100vw" />
           </a>
         </NavLink>
@@ -21,27 +21,22 @@ export default function Navbar() {
             to="/users"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            <a class="link" href="#">
+            <a className="link" href="#">
               Inicio
             </a>
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active" : "")}
-            to="/about"
-          >
-            <a class="link" href="#">
-              Beneficios
-            </a>
-          </NavLink>
+          <a className="link" href="#beneficios">
+            Beneficios
+          </a>
         </li>
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/about"
           >
-            <a class="link myButton" href="#">
+            <a className="link myButton" href="#">
               Login
             </a>
           </NavLink>
